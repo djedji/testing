@@ -1,0 +1,358 @@
+
+
+/*-------------------------
+    General Styles
+--------------------------*/
+
+
+/*html{*/
+    /*background-color:#ebebec;*/
+
+    /*background-image:-webkit-radial-gradient(center, #ebebec, #b4b4b4);*/
+    /*background-image:-moz-radial-gradient(center, #ebebec, #b4b4b4);*/
+    /*background-image:radial-gradient(center, #ebebec, #b4b4b4);*/
+
+    /*min-height:900px;*/
+/*}*/
+
+/*body{*/
+    /*font:15px/1.3 Arial, sans-serif;*/
+    /*color: #4f4f4f;*/
+/*}*/
+
+/*a, a:visited {*/
+    /*outline:none;*/
+    /*color:#389dc1;*/
+/*}*/
+
+/*a:hover{*/
+    /*text-decoration:none;*/
+/*}*/
+
+
+
+/*----------------------------
+    The file upload form
+-----------------------------*/
+
+a:active,
+a:visited {
+    outline: none;
+}
+
+#form-upload {
+    /*font-family:'PT Sans Narrow', sans-serif;*/
+    background-color:#373a3d;
+
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+
+    min-width:450px;
+    padding:30px;
+    border-radius:3px;
+
+    margin: 150px auto 100px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drop{
+    background-color: #2E3134;
+    padding: 40px 60px 50px 60px;
+    margin-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../img/border-image.png') 25 repeat;
+    text-align: center;
+    /*text-transform: uppercase;*/
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop > span {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#drop > a {
+    font-size: 16px;
+}
+
+/*#drop a{*/
+    /*background-color:#007a96;*/
+    /*padding:12px 26px;*/
+    /*color:#fff;*/
+    /*font-size:14px;*/
+    /*border-radius:2px;*/
+    /*cursor:pointer;*/
+    /*display:inline-block;*/
+    /*margin-top:12px;*/
+    /*line-height:1;*/
+/*}*/
+
+/*#drop a:hover{*/
+    /*background-color:#0986a3;*/
+/*}*/
+
+#drop > input{
+    display:none;
+}
+
+#form-upload > ul {
+    list-style:none;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+    padding: 0;
+}
+
+#form-upload > ul > li{
+    display: block;
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding: 0;
+    /*height: 88px;*/
+
+    width: 100%;
+    position: relative;
+}
+#form-upload > ul > li:after {
+    content: '';
+    display: table;
+    clear:both;
+}
+#form-upload > ul > li > div {
+    float:left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#form-upload > ul > li > div:first-child {
+    padding-right: 20px;
+    width: 92px;
+    position: relative;
+}
+#form-upload > ul > li > div:first-child > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#form-upload > ul > li > div:last-child {
+    float: right;
+    /*width: 180px;*/
+}
+
+#form-upload > ul > li > div:last-child > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#form-upload > ul > li > div:last-child > a > .fa-times {
+     font-size: 22px;
+     color: #ffa5aa;
+     text-shadow: 0 0 2px #923f42;
+    text-decoration: none;
+    margin: 0;
+ }
+
+#form-upload > ul > li > div:last-child > a > .fa-times:hover,
+#form-upload > ul > li > div:last-child > a > .fa-times:focus,
+#form-upload > ul > li > div:last-child > a > .fa-times:active {
+    font-size: 29px;
+    color: #d16366;
+    text-shadow: 0 0 8px #cb0002;
+    text-decoration: none;
+}
+
+#form-upload > ul > li > div > input {
+    display: none;
+    text-align: center;
+    background-image: none;
+    color: #0788a5;
+    line-height: normal;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: Arial;
+    font-size: 9px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    margin-top: 16px;
+    margin-left: -38px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    vertical-align: middle;
+    border-top-color: currentColor;
+    border-right-color: currentColor;
+    border-bottom-color: currentColor;
+    border-left-color: currentColor;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    position: absolute;
+    font-size-adjust: none;
+    font-stretch: normal;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    background-color: transparent;
+}
+#form-upload > ul > li > div > p {
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+}
+#form-upload > ul > li > div > p > i {
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+/*#form-upload ul li canvas{*/
+    /*top: 17px;*/
+    /*left: 11px;*/
+    /*position: absolute;*/
+    /*display: block;*/
+/*}*/
+
+#form-upload ul > li > div > span {
+    width: 13px;
+    height: 13px;
+    background: url('../img/icon_close.png') no-repeat;
+    /*position: absolute;*/
+    /*top: 34px;*/
+    /*right: 33px;*/
+    cursor:pointer;
+    display: block;
+}
+
+/*#form-upload > ul > li.working > div > span{*/
+    /*height: 16px;*/
+    /*background-position: 0 -12px;*/
+/*}*/
+
+#form-upload ul li.error p{
+    color:red;
+}
+
+
+/*----------------------------
+    The Demo Footer
+-----------------------------*/
+
+
+/*footer{*/
+    /*background-color: #080808;*/
+    /*bottom: 0;*/
+    /*box-shadow: 0 -1px 2px rgba(0,0,0,0.4);*/
+    /*height: 40px;*/
+    /*left: 0;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*z-index: 100000;*/
+/*}*/
+
+/*footer h2{*/
+    /*font-size: 14px;*/
+    /*font-weight: normal;*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 50%;*/
+    /*bottom:0;*/
+    /*margin-left: -420px;*/
+    /*padding:13px 20px 0;*/
+    /*border:1px solid #000;*/
+    /*border-width:0 1px;*/
+    /*background-color:rgba(0,0,0,0.6);*/
+    /*box-shadow:0 0 5px #000 inset;*/
+    /*line-height: 1;*/
+    /*margin-top: 0;*/
+/*}*/
+
+/*footer h2 a{*/
+    /*color: #EEEEEE !important;*/
+    /*text-decoration:none !important;*/
+/*}*/
+
+/*footer h2 i{*/
+    /*font-style:normal;*/
+    /*color:#888;*/
+/*}*/
+
+/*#tzine-download{*/
+    /*opacity:0.9;*/
+    /*background-color:#257691;*/
+    /*font-size:11px;*/
+    /*text-align:center;*/
+    /*text-transform:uppercase;*/
+    /*width:150px;*/
+    /*height:28px;*/
+    /*line-height:28px;*/
+    /*text-decoration:none !important;*/
+
+    /*display: inline-block;*/
+    /*border-radius: 2px;*/
+    /*color: #fff !Important;*/
+    /*font-weight: bold;*/
+    /*box-shadow: 0 -1px 2px #1e5e74 inset;*/
+
+    /*border-top:1px solid #26849c;*/
+
+    /*text-shadow:1px 1px 1px #1e6176;*/
+    /*margin-top:6px;*/
+/*}*/
+
+/*#tzine-download:hover{*/
+    /*opacity:1;*/
+/*}*/
+
+/*#tzine-actions{*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*width:500px;*/
+    /*right:50%;*/
+    /*margin-right:-420px;*/
+    /*text-align:right;*/
+/*}*/
+
+/*#tzine-actions iframe{*/
+    /*display: inline-block;*/
+    /*height: 21px;*/
+    /*width: 95px;*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*margin-top: 11px;*/
+/*}*/
+
+
