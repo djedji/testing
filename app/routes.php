@@ -11,21 +11,14 @@
 |
 */
 
-// test variable environment for connection database 
-// development = localhost
-// production = getenv(fortrabbit-vars-settings)
-
+//Route::get('/', array(
+//    'uses' => 'HomeController@index',
+//    'as' => 'home.index'
+//));
 
 //dd(App::environment());
 
-//Route::get('/', function() {
-	//return dd(Config::get('database.connections.mysql'));
-//});
-
-
-
-Route::get('/', array(
-    'uses' => 'HomeController@index',
-    'as' => 'home.index'
-));
-
+Route::get('/', function() {
+//    dd(App::environment());
+    dd(Config::get('database.connections.mysql'));
+});

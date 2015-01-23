@@ -27,7 +27,7 @@ $app = new Illuminate\Foundation\Application;
 //putenv('ENV=production');
 
 $env = $app->detectEnvironment(function() {
-	return getenv('ENV') ?: 'development';
+    return getenv('ENV') ?: 'development';
 });
 
 /*
